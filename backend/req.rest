@@ -1,0 +1,22 @@
+POST http://172.25.43.28:4000/login
+Content-Type: application/json
+
+{
+    "email": "koolkid@gmail.com",
+    "password": "Koolkid1"
+}
+
+###
+
+GET http://172.25.43.28:4001/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtvb2xraWRAZ21haWwuY29tIiwiaWF0IjoxNzI0OTUwNzQ0LCJleHAiOjE3MjQ5NTA3NTl9.DFOGRpP890PYQudDR_nK7Lv98jFbm3Mzk2jK-3wgOuo
+### refresh token
+POST http://172.25.43.28:4000/token
+
+
+
+###
+
+DELETE http://172.25.43.28:4000/logout
+
+
