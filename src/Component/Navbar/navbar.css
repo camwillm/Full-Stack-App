@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 .navbar {
     background: #D8DABA;
     height: 5rem;
@@ -10,14 +11,16 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
+
 .desktopMenu {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-right: 20vw;
+    padding-right: 15vw;
 }
+
 .desktopMenuListItem {
     padding-right: 1rem;
     margin: 1.2rem;
