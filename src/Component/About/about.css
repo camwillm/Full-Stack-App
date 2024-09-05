@@ -1,0 +1,116 @@
+/* Container for the whole About section */
+.about {
+    display: flex;
+    flex-direction: row;
+    /* Align items horizontally */
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height (optional, if you want to cover the full height) */
+    background-color: #fbe9d7;
+}
+
+/* Container for the image */
+.about-image-container {
+    width: 50vw;
+    /* 50% of viewport width */
+    height: 100%;
+    /* Full height of the section */
+}
+
+/* Image styling */
+.about-image {
+    width: 100%;
+    /* Make the image fill the container width */
+    height: 100%;
+    /* Make the image fill the container height */
+    object-fit: cover;
+    /* Ensure the image covers the container without distortion */
+}
+
+/* Content container styling */
+.about-content {
+    width: 50vw;
+    /* 50% of viewport width */
+    padding: 20px;
+    /* Add padding inside the content container */
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    gap: 20px;
+    /* Space between elements */
+    overflow-y: auto;
+    /* Scroll if content overflows vertically */
+}
+
+/* Title styling */
+.about h1 {
+    margin: 0;
+    font-family: "EB Garamond", system-ui;
+    font: bold;
+    font-size: 60px;
+}
+
+.about h2 {
+    margin: 0;
+    font-family: "EB Garamond", system-ui;
+    font: bold;
+    text-align: center;
+}
+
+/* Add space below the paragraph */
+.about p {
+    margin: 0;
+}
+
+/* Button styling */
+.learn-more-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+/* Styling for additional info when expanded */
+.about-additional-info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Light background */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        /* Stack image and content vertically on smaller screens */
+    }
+
+    .about-image-container,
+    .about-content {
+        width: 100vw;
+        /* Full viewport width when stacked vertically */
+    }
+
+    .about-image {
+        height: auto;
+        /* Adjust height for better display on small screens */
+    }
+
+    .about-content {
+        text-align: center;
+        /* Center-align text for better readability */
+    }
+}
